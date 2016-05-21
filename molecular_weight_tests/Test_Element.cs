@@ -1,16 +1,17 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using molecular_weight;
+using NUnit.Framework;
 
 namespace molecular_weight_tests
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTest1
     {
-        [TestMethod]
+        [Test]
         public void TestHydrogenElement()
         {   
             Element hydrogen = new Element("Hydrogen",1,"H",1.01);
-            Assert.Equals("Hydrogen",hydrogen.getElementName());
+            Assert.AreEqual("Hydrogen",hydrogen.ElementName);
             
         }
     }
