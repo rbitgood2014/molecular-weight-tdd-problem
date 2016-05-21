@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace molecular_weight_tests
 {
     [TestFixture]
-    public class TestFile
+    public class Test_Structure
     {
         [Test]
         public void TestElementFileExists()
